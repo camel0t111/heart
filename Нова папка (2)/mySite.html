@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+	<style>
+		body {
+			background-color: #fafad2;
+			font-family: montserrat;
+			text-align: center;
+			padding: 50px;
+		}
+		.images {
+			display: flex;
+			justify-content: center;
+			margin-top: 100px;
+		}
+
+		.calc {
+			transform: rotate(-35deg);
+			width: 150px;
+			height: 150px;
+			margin-top: 130px;
+			margin-right: 60px;
+		}
+
+		.book {
+			transform: rotate(-20deg);
+			padding-right: 20px;
+		}
+
+		.paper {
+			transform: rotate(20deg);
+			padding-left: 20px;
+		}
+
+		.pallete {
+			transform: rotate(-145deg);
+			width: 150px;
+			height: 150px;
+			margin-top: 130px;
+			margin-left: 60px;
+		}
+
+		.pencil {
+			transform: rotate(90deg);
+			width: 165px;
+			height: 165px;
+		}
+
+		.container {
+			opacity: 100%;
+			animation: move 2s 1;
+		}
+
+
+		@keyframes move {
+			0% {
+				opacity: 0;
+				padding-top: 500px;
+			}
+			50% {
+				opacity: 100%;
+				padding: 0;
+			}		
+			100% {
+				opacity: 100%;
+			}	
+		}
+
+
+	</style>
+<body>
+	<h1>HELLO, MY SITE!</h1>
+	<div class="container">
+	<div class="images">
+		<img src="calc.png" class="calc">
+		<img src="book.png" class="book">
+		<img src="paper.png" class="paper">
+		<img src="pallete.png" class="pallete">
+	</div>
+	<img src="pencil.png" class="pencil">
+	</div>
+</body>
+</html>
